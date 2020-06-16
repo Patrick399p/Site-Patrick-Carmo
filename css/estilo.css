@@ -199,9 +199,9 @@ header{
     margin-bottom: 0;
   }
   #competencias .comp p{
-   border-left: 2px solid black;
-   border-right: 2px solid black;
-   border-bottom: 2px solid black;
+   border-left: 7px solid black;
+   border-right: 7px solid black;
+   border-bottom: 7px solid black;
    border-radius: 20%; 
    margin-top: 0;
    font-family: "Gochi Hand", "Helvetica" , "Arial", sans-serif;
@@ -209,7 +209,94 @@ header{
    padding-left: 15px;
    line-height: 1.5;
   }
+  .trab img:hover{
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);   
+  }
+  .trab img{
+    border:10px groove #00FF00
+  }
 
+  /*
+  hobby
+  */
+
+  #hobby{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+   width: 100%; 
+    
+  }
+
+  #hobby h2{
+   margin-bottom: 20px;
+   margin-top: 10px;
+   font-size: 2em;
+   text-align: center;
+  }
+  .hobby{
+    width: 80%;
+    align-items: center;
+    text-align: center;
+  }
+  .hobby h3{
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 14px;
+  }
+
+  /*
+  contatos
+  */
+
+  #contatos{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   background-color: #008000;
+   
+  }
+ #contatos h2{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 2em;
+  text-align: center;
+  color: #000000;
+ }
+
+ #contatos > p{
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #000000;
+  text-align: center;
+ } 
+ #contatos a{
+   text-decoration: none;
+   color: #00FF00;
+   font-family; "Patrick+Hand", "Patrick+Hand+SC", "arial", sans-serif;
+ }
+ /*
+ FOOTER
+ */
+
+ footer {
+  text-align: center;
+  width: 100%;
+  background-color: #00FF00;
+  color: #ffffff
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }
 @media screen and (min-width: 768px){
 
 /* Cabeçalho ou barra de navegação */
@@ -259,7 +346,8 @@ nav ul{
    flex-wrap: wrap;
    align-items: flex-start;
    max-width: 1000px;
-   margin: 0 auto; 
+   margin: 0 auto;
+   background-color: #00FF00 
  }
  #Especialidades h2 {
    text-align: center;
@@ -278,7 +366,7 @@ nav ul{
  #competencias{
    flex-direction: row;
    flex-wrap: wrap; 
-
+   background-color: #008000
  } 
  #competencias  h2 , h3{
    width: 100%;
@@ -289,4 +377,25 @@ nav ul{
    text-align: center;
 
  }
+/* 
+CONTATOS
+*/
+#contatos{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-height: 40vh;
+  width: 100%;
+}
+
+#contatos h2,
+#contatos p {
+  width: 100%;
+  text-align: center;
+}
+
+
 }
